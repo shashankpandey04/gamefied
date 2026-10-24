@@ -1,26 +1,37 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #151512;
+  --foreground: #F3EFE6;
+  --obsidian: #151512;
+  --warm-ivory: #F3EFE6;
+  --champagne: #C5A875;
+  --olive-gray: #858573;
+  --secondary-text: #A7A49A;
+  --dark-borders: #35352F;
+  --light-borders: #D8D2C7;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-obsidian: #151512;
+  --color-warm-ivory: #F3EFE6;
+  --color-champagne: #C5A875;
+  --color-olive-gray: #858573;
+  --color-secondary-text: #A7A49A;
+  --color-dark-borders: #35352F;
+  --color-light-borders: #D8D2C7;
 }
 
 body {
-  background: var(--background);
+  background: var(--obsidian);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-editorial {
+  font-family: 'Instrument Serif', Georgia, 'Times New Roman', serif;
 }

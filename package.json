@@ -1,14 +1,17 @@
 {
-  "name": "reinvent-awslpu",
+  "name": "nerdmocks",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "test": "node --experimental-strip-types --loader ./scripts/test-loader.mjs --test lib/accenture/engine/challenge-selector.test.ts lib/accenture/games/burst-the-bubble.test.ts"
   },
   "dependencies": {
+    "framer-motion": "^12.43.0",
+    "lucide-react": "^1.47.0",
     "next": "16.4.3",
     "react": "19.3.0",
     "react-dom": "19.3.0"
